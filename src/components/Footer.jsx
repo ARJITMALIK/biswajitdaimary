@@ -83,15 +83,15 @@ const Footer = () => {
                         </h4>
                         <div className="flex flex-col space-y-4">
                             <div className="bg-gray-50 p-3 rounded-2xl inline-block w-fit shadow-inner group hover:shadow-md transition-all duration-300">
-                                <img src={qrCode} alt="Scan to Download" className="w-24 h-24 md:w-28 md:h-28 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                <img src={qrCode} alt="Scan the QR code to download the official Biswajit Daimary mobile app" className="w-24 h-24 md:w-28 md:h-28 grayscale group-hover:grayscale-0 transition-all duration-500" />
                                 <p className="text-[10px] text-gray-400 mt-2 text-center font-bold tracking-tight">SCAN TO DOWNLOAD</p>
                             </div>
                             <div className="flex flex-col space-y-2">
                                 <a href="#" className="transform hover:scale-105 transition-transform duration-200">
-                                    <img src={appStoreBtn} alt="Download on App Store" className="h-14 md:h-16 w-auto object-contain" />
+                                    <img src={appStoreBtn} alt="Download Biswajit Daimary App on the Apple App Store" className="h-14 md:h-16 w-auto object-contain" />
                                 </a>
                                 <a href="#" className="transform hover:scale-105 transition-transform duration-200">
-                                    <img src={playStoreBtn} alt="Get it on Google Play" className="h-14 md:h-16 w-auto object-contain" />
+                                    <img src={playStoreBtn} alt="Get the Biswajit Daimary App on Google Play Store" className="h-14 md:h-16 w-auto object-contain" />
                                 </a>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -14,7 +15,6 @@ const ParliamentPage = lazy(() => import('./pages/ParliamentPage'));
 const Contact = lazy(() => import('./pages/Contact'));
 const BodoPeaceProcess = lazy(() => import('./pages/BodoPeaceProcess'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
-
 const TermsConditions = lazy(() => import('./pages/TermsConditions'));
 
 // Minimal loading spinner
@@ -35,31 +35,32 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white">
-        <ScrollToTop />
-        <Header />
-        <main className="pt-20">
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<Biography />} />
-              <Route path="/gallery" element={<GalleryPage />} />
-              <Route path="/news" element={<NewsPage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/elections" element={<ElectionsPage />} />
-              <Route path="/parliament" element={<ParliamentPage />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/bodo-peace-accord" element={<BodoPeaceProcess />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-
-              <Route path="/terms" element={<TermsConditions />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-white">
+          <ScrollToTop />
+          <Header />
+          <main className="pt-20">
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<Biography />} />
+                <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/news" element={<NewsPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/elections" element={<ElectionsPage />} />
+                <Route path="/parliament" element={<ParliamentPage />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/bodo-peace-accord" element={<BodoPeaceProcess />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsConditions />} />
+              </Routes>
+            </Suspense>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

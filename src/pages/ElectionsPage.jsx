@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollRevealChildren } from '../hooks/useScrollReveal';
+import SEO from '../components/SEO';
 import { Trophy, Users, BarChart, Flag, CheckCircle } from 'lucide-react';
 
 const ElectionsPage = () => {
@@ -21,12 +22,18 @@ const ElectionsPage = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Election Mandate"
+                description="View the election results and public mandates of Biswajit Daimary, reflecting his legacy of public support and victory."
+                keywords="Biswajit Daimary Election Results, Panery Constituency, Tamulpur MLA, Rajya Sabha MP Assam"
+                url="/elections"
+            />
             {/* Hero Section */}
             <section className="bg-primary-dark py-20 md:py-32 text-white relative overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-30">
                     <img
                         src="https://images.hindustantimes.com/img/2021/02/15/550x309/PTI23-11-2020_000169A_1613377454396_1613377460332.jpg"
-                        alt="Victory Moment"
+                        alt="Biswajit Daimary celebrating victory with supporters after election results"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-primary-dark/80 backdrop-blur-[2px]"></div>

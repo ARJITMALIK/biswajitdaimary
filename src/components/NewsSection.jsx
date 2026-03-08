@@ -43,7 +43,7 @@ const NewsSection = () => {
                             <div className="relative h-56 overflow-hidden">
                                 <img
                                     src={news.image}
-                                    alt={news.title}
+                                    alt={`News: ${news.title}`}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                                 <div className="absolute top-4 left-4 bg-primary-orange text-white text-[10px] font-bold uppercase py-1 px-3 rounded-full">

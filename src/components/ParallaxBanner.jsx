@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import daimary_tea_garden from '../assets/daimary_tea_garden.png';
 
 const ParallaxBanner = () => {
     const ref = useScrollReveal();
@@ -8,7 +9,7 @@ const ParallaxBanner = () => {
         <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
             <div
                 className="absolute inset-0 z-0 bg-scroll md:bg-fixed bg-cover bg-center"
-                style={{ backgroundImage: 'url("/src/assets/daimary_tea_garden.png")' }}
+                style={{ backgroundImage: `url(${daimary_tea_garden})` }}
             >
                 <div className="absolute inset-0 bg-primary-dark/60 backdrop-blur-[2px]"></div>
             </div>

@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import daimary_assembly from '../assets/daimary_assembly.png';
+import daimary_tea_garden from '../assets/daimary_tea_garden.png';
+import daimary_bodo_culture from '../assets/daimary_bodo_culture.png';
+import daimary_meeting from '../assets/daimary_meeting.png';
+import official_event_daimary from '../assets/official_event_daimary.png';
+
 const Gallery = () => {
     const items = [
-        { id: 1, img: '/src/assets/daimary_assembly.png', title: 'Assembly Session', span: 'md:col-span-2 md:row-span-2 col-span-2 row-span-1' },
-        { id: 2, img: '/src/assets/daimary_tea_garden.png', title: 'Rural Outreach', span: 'col-span-1 row-span-1' },
-        { id: 3, img: '/src/assets/daimary_bodo_culture.png', title: 'Cultural Heritage', span: 'col-span-1 row-span-1' },
-        { id: 4, img: '/src/assets/daimary_meeting.png', title: 'Public Meeting', span: 'md:col-span-1 md:row-span-2 col-span-1 row-span-1' },
-        { id: 5, img: '/src/assets/official_event_daimary.png', title: 'Official Event', span: 'col-span-1 row-span-1' }
+        { id: 1, img: daimary_assembly, title: 'Assembly Session', span: 'md:col-span-2 md:row-span-2 col-span-2 row-span-1' },
+        { id: 2, img: daimary_tea_garden, title: 'Rural Outreach', span: 'col-span-1 row-span-1' },
+        { id: 3, img: daimary_bodo_culture, title: 'Cultural Heritage', span: 'col-span-1 row-span-1' },
+        { id: 4, img: daimary_meeting, title: 'Public Meeting', span: 'md:col-span-1 md:row-span-2 col-span-1 row-span-1' },
+        { id: 5, img: official_event_daimary, title: 'Official Event', span: 'col-span-1 row-span-1' }
     ];
 
     return (
@@ -29,7 +35,7 @@ const Gallery = () => {
                             <div className="w-full h-full hover:scale-[0.98] transition-transform duration-300">
                                 <img
                                     src={item.img}
-                                    alt={item.title}
+                                    alt={`Biswajit Daimary Gallery: ${item.title}`}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     loading="lazy"
                                 />

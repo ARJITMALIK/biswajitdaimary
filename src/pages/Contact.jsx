@@ -1,9 +1,16 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Contact"
+                description="Connect with the office of Speaker Biswajit Daimary. Reach out for inquiries, feedback, or engagement."
+                keywords="Contact Biswajit Daimary, Assam Speaker Office, Connect with Biswajit Daimary"
+                url="/contact"
+            />
             <section className="bg-primary-orange py-16 md:py-24 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-white/10 blur-3xl -mr-48 -mt-48"></div>
                 <div className="container mx-auto px-4 text-center relative z-10">

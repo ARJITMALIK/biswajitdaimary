@@ -1,6 +1,8 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { useScrollReveal, useScrollRevealChildren } from '../hooks/useScrollReveal';
 import { Bird, ShieldCheck, Landmark, Globe, FileText, Users, GraduationCap, Building2, Terminal } from 'lucide-react';
+import bodo_culture_background from '../assets/bodo_culture_background.png';
 
 const BodoPeaceProcess = () => {
     const headerRef = useScrollReveal();
@@ -51,12 +53,18 @@ const BodoPeaceProcess = () => {
 
     return (
         <div className="bg-white">
+            <SEO
+                title="Bodo Peace Accord"
+                description="Explore Biswajit Daimary's pivotal role in the Bodo Peace Accord and the transition to stability and progress in the Bodoland Territorial Region (BTR)."
+                keywords="Bodo Peace Accord, BTR, Bodoland Territorial Region, Peace in Assam, Biswajit Daimary Peace Process"
+                url="/bodo-peace-accord"
+            />
             {/* Hero Header */}
             <section ref={headerRef} className="bg-primary-dark pt-32 pb-20 md:pb-40 text-white relative overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-10">
                     <img
-                        src="/src/assets/bodo_culture_background.png"
-                        alt="Cultural Background"
+                        src={bodo_culture_background}
+                        alt="Traditional Bodo cultural heritage background representing peace and identity"
                         className="w-full h-full object-cover"
                     />
                 </div>

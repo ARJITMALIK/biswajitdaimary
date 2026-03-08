@@ -1,6 +1,8 @@
 import React from 'react';
 import { useScrollRevealChildren } from '../hooks/useScrollReveal';
 import { Droplets, Building2, Heart, Construction, GraduationCap, Factory, ArrowRight } from 'lucide-react';
+import rural_water_scheme from '../assets/rural_water_scheme.png';
+import SEO from '../components/SEO';
 
 const ProjectsPage = () => {
     const containerRef = useScrollRevealChildren();
@@ -8,7 +10,7 @@ const ProjectsPage = () => {
         {
             title: 'Water & Rural Security',
             icon: Droplets,
-            image: '/src/assets/rural_water_scheme.png',
+            image: rural_water_scheme,
             projects: [
                 { name: 'Nanoi Multi-Village Water Scheme', cost: '₹175 Crore', detail: 'Gravity-based supply from Samrang River (Bhutan) serving 1.5 lakh people in Panery.' },
                 { name: 'Dimakuchi Water Supply Scheme', cost: '₹1000 Crore (Proposed)', detail: 'Comprehensive infrastructure for Bhutan border areas to ensure rural water security.' }
@@ -62,11 +64,17 @@ const ProjectsPage = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Impact & Development"
+                description="Discover the developmental projects and impact initiatives spearheaded by Biswajit Daimary in the Bodoland Territorial Region (BTR) and Assam."
+                keywords="BTR Development Projects, Biswajit Daimary Initiatives, Infrastructure in Assam, BTR Progress"
+                url="/projects"
+            />
             <section className="bg-primary-dark py-20 md:py-32 text-white relative overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-20">
                     <img
                         src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000"
-                        alt="Background"
+                        alt="Developmental impact: Modern infrastructure project in BTR"
                         className="w-full h-full object-cover grayscale"
                     />
                 </div>
@@ -88,7 +96,7 @@ const ProjectsPage = () => {
                                 <div className="h-48 md:h-64 relative overflow-hidden">
                                     <img
                                         src={cat.image}
-                                        alt={cat.title}
+                                        alt={`BTR Development Category: ${cat.title}`}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent to-transparent opacity-60"></div>

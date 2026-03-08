@@ -9,6 +9,8 @@ import Gallery from '../components/Gallery';
 import ParallaxBanner from '../components/ParallaxBanner';
 import SocialFeed from '../components/SocialFeed';
 import AppDownloadSection from '../components/AppDownloadSection';
+import daimary_assembly from '../assets/daimary_assembly.png';
+import SEO from '../components/SEO';
 
 function Home() {
     const [email, setEmail] = useState('');
@@ -24,6 +26,14 @@ function Home() {
 
     return (
         <>
+            <SEO
+                title="Home"
+                description="Welcome to the official website of Biswajit Daimary, honorable Speaker of the Assam Legislative Assembly. Discover his vision for a prosperous and peaceful Assam."
+                keywords="Biswajit Daimary, Assam Speaker, Bodo Leader, Assam Politics, BTR Development"
+                url="/"
+                type="Organization"
+            />
+            <h1 className="sr-only">Biswajit Daimary | Speaker of Assam Legislative Assembly</h1>
             <HeroSlider />
             <StatsSection />
             <ImpactSection />
@@ -57,8 +67,8 @@ function Home() {
             <section className="py-16 md:py-24 bg-gray-900 overflow-hidden relative">
                 <div className="absolute inset-0 z-0 opacity-20">
                     <img
-                        src="/src/assets/daimary_assembly.png"
-                        alt="Decorative"
+                        src={daimary_assembly}
+                        alt="Background: Assam Legislative Assembly Building in Dispur"
                         className="w-full h-full object-cover grayscale"
                     />
                 </div>

@@ -12,8 +12,9 @@ const AboutSection = () => {
                         <div className="relative inline-block border-[10px] border-primary-orange p-2 rounded-2xl shadow-2xl">
                             <img
                                 src="https://newslivetv.com/wp-content/uploads/2021/02/Assam-Biswajit-Daimary-to-be-BJP-candidate-for-Rajya-Sabha-by-polls.jpg"
-                                alt="Biswajit Daimary"
+                                alt="Biswajit Daimary, honorable Speaker of the Assam Legislative Assembly"
                                 className="w-full rounded-lg max-h-[600px] object-cover"
+                                loading="lazy"
                                 onError={(e) => {
                                     e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop';
                                 }}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, Search } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const NewsPage = () => {
     const news = [
@@ -39,6 +40,12 @@ const NewsPage = () => {
 
     return (
         <div>
+            <SEO
+                title="News & Updates"
+                description="Stay updated with the latest news, press releases, and official announcements from the office of Speaker Biswajit Daimary."
+                keywords="Biswajit Daimary News, Assam Assembly Updates, BTR News, Official Announcements"
+                url="/news"
+            />
             <section className="bg-gray-50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
@@ -70,7 +77,7 @@ const NewsPage = () => {
                                 <div className="w-full md:w-1/2 h-48 md:h-64 overflow-hidden rounded-[2rem] shadow-lg flex-shrink-0">
                                     <img
                                         src={item.image}
-                                        alt={item.title}
+                                        alt={`News: ${item.title}`}
                                         className="w-full h-full object-cover"
                                         loading="lazy"
                                     />

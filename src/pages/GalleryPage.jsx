@@ -1,10 +1,11 @@
-import React from 'react';
+import daimary_bodo_culture from '../assets/daimary_bodo_culture.png';
+import SEO from '../components/SEO';
 
 const GalleryPage = () => {
     const albums = [
         { id: 1, title: 'Legislative Sessions', count: '45 Photos', img: 'https://pbs.twimg.com/media/GUyIwXNWAAI30zv.jpg' },
         { id: 2, title: 'Constituency Visits', count: '120 Photos', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTZAwbgqUQkDSaSHOOfFWigB4aBCRx8FAcw&s' },
-        { id: 3, title: 'Bodo Cultural Events', count: '85 Photos', img: '/src/assets/daimary_bodo_culture.png' },
+        { id: 3, title: 'Bodo Cultural Events', count: '85 Photos', img: daimary_bodo_culture },
         { id: 4, title: 'Official Engagements', count: '60 Photos', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesFUUp9BdTVJOtkEyIem_s4fESLZWmcC_iw&s' },
         { id: 5, title: 'Public Meetings', count: '30 Photos', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTZAwbgqUQkDSaSHOOfFWigB4aBCRx8FAcw&s' },
         { id: 6, title: 'State Events', count: '55 Photos', img: 'https://images.hindustantimes.com/img/2021/02/15/550x309/PTI23-11-2020_000169A_1613377454396_1613377460332.jpg' }
@@ -12,6 +13,12 @@ const GalleryPage = () => {
 
     return (
         <div>
+            <SEO
+                title="Gallery"
+                description="Browse through the visual story of Biswajit Daimary's leadership, cultural engagements, and public life."
+                keywords="Biswajit Daimary Gallery, Photos of Biswajit Daimary, Assam Politics Gallery, Bodo Cultural Events Photos"
+                url="/gallery"
+            />
             <section className="bg-white py-16 md:py-24">
                 <div className="container mx-auto px-4 text-center">
                     <h3 className="text-primary-orange text-xs md:text-sm font-bold uppercase tracking-widest mb-4">Visual Story</h3>
@@ -31,7 +38,7 @@ const GalleryPage = () => {
                                 <div className="relative h-64 md:h-80 overflow-hidden rounded-[2rem] md:rounded-[2.5rem] shadow-xl">
                                     <img
                                         src={album.img}
-                                        alt={album.title}
+                                        alt={`Biswajit Daimary Gallery Album: ${album.title}`}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                         loading="lazy"
                                     />

@@ -9,6 +9,9 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import hero_assembly from '../assets/hero/hero_assembly.png';
+import hero_culture from '../assets/hero/hero_culture.png';
+
 const HeroSlider = () => {
     const navigate = useNavigate();
 
@@ -27,7 +30,7 @@ const HeroSlider = () => {
             title: "STRENGTHENING DEMOCRACY",
             subtitle: "Speaker, Assam Legislative Assembly",
             desc: "Spearheading the digitization of the assembly and ensuring transparent governance for a stronger future.",
-            image: "/src/assets/hero/hero_assembly.png",
+            image: hero_assembly,
             cta: "House Proceedings",
             ctaPath: "/parliament"
         },
@@ -36,7 +39,7 @@ const HeroSlider = () => {
             title: "VOICE OF THE GRASSROOTS",
             subtitle: "Empowering the Communities",
             desc: "Working tirelessly for the welfare of the Bodo community and every citizen from the tea gardens to the hills.",
-            image: "/src/assets/hero/hero_culture.png",
+            image: hero_culture,
             cta: "Latest Initiatives",
             ctaPath: "/projects"
         }
@@ -61,7 +64,7 @@ const HeroSlider = () => {
                             <div className="absolute inset-0 z-0">
                                 <img
                                     src={slide.image}
-                                    alt={slide.title}
+                                    alt={`Biswajit Daimary - ${slide.title} - ${slide.subtitle}`}
                                     className="w-full h-full object-contain object-center transition-transform duration-700"
                                     loading="lazy"
                                 />
@@ -73,13 +76,13 @@ const HeroSlider = () => {
                                     <h2 className="text-primary-orange text-sm md:text-xl font-bold uppercase tracking-[0.2em] mb-3 md:mb-4">
                                         {slide.subtitle}
                                     </h2>
-                                    <h1 className="text-3xl md:text-8xl font-black mb-4 md:mb-6 leading-tight uppercase drop-shadow-2xl text-white">
+                                    <h2 className="text-3xl md:text-8xl font-black mb-4 md:mb-6 leading-tight uppercase drop-shadow-2xl text-white">
                                         {slide.title.includes('DAIMARY') ? (
                                             <>BISWAJIT <br /> <span className="text-primary-orange">DAIMARY</span></>
                                         ) : (
                                             slide.title
                                         )}
-                                    </h1>
+                                    </h2>
                                     <p className="text-base md:text-xl text-white/90 mb-6 md:mb-8 max-w-lg leading-relaxed font-light drop-shadow-lg">
                                         {slide.desc}
                                     </p>

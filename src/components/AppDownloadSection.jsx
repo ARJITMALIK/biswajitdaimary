@@ -29,17 +29,17 @@ const AppDownloadSection = () => {
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
                             {/* QR Code */}
                             <div className="bg-white/5 backdrop-blur-xl p-4 rounded-3xl border border-white/10 shadow-2xl group transition-all duration-500 hover:bg-white/10">
-                                <img src={qrCode} alt="Scan QR" className="w-28 h-28 md:w-32 md:h-32 rounded-xl" />
+                                <img src={qrCode} alt="Scan QR code to download Biswajit Daimary's official app" className="w-28 h-28 md:w-32 md:h-32 rounded-xl" />
                                 <p className="text-[10px] text-gray-500 mt-3 text-center font-bold tracking-widest uppercase">Scan to Download</p>
                             </div>
 
                             {/* Store Buttons */}
                             <div className="flex flex-col gap-6">
                                 <a href="#" className="transform hover:scale-105 transition-all duration-300">
-                                    <img src={appStoreBtn} alt="App Store" className="h-20 md:h-24 w-auto drop-shadow-2xl" />
+                                    <img src={appStoreBtn} alt="Download the Biswajit Daimary Connect App on Apple App Store" className="h-20 md:h-24 w-auto drop-shadow-2xl" />
                                 </a>
                                 <a href="#" className="transform hover:scale-105 transition-all duration-300">
-                                    <img src={playStoreBtn} alt="Play Store" className="h-20 md:h-24 w-auto drop-shadow-2xl" />
+                                    <img src={playStoreBtn} alt="Download the Biswajit Daimary Connect App on Google Play Store" className="h-20 md:h-24 w-auto drop-shadow-2xl" />
                                 </a>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const AppDownloadSection = () => {
                             <div className="absolute inset-0 bg-primary-orange/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                             <img
                                 src={appMockup}
-                                alt="App Interface"
+                                alt="Biswajit Daimary Mobile App Interface Preview"
                                 className="w-[280px] md:w-[380px] h-auto relative z-10 drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform -rotate-6 group-hover:rotate-0 transition-all duration-700"
                             />
                         </div>

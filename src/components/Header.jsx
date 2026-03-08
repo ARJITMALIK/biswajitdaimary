@@ -97,7 +97,7 @@ const Header = () => {
                     <Link to="/" className="flex items-center space-x-3 group">
                         <img src="/logo.svg" alt="BD Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-2xl shadow-lg group-hover:rotate-6 transition-transform" />
                         <div>
-                            <h1 className="text-lg md:text-xl font-black text-primary-dark leading-none tracking-tighter">BISWAJIT DAIMARY</h1>
+                            <span className="text-lg md:text-xl font-black text-primary-dark leading-none tracking-tighter block">BISWAJIT DAIMARY</span>
                             <p className="text-[8px] md:text-[10px] text-primary-orange font-black uppercase tracking-[0.2em] mt-1">Speaker, Assam Legislative Assembly</p>
                         </div>
                     </Link>
@@ -147,7 +147,7 @@ const Header = () => {
                             <Link to="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
                                 <img src="/logo.svg" alt="BD Logo" className="w-10 h-10 rounded-2xl shadow-lg" />
                                 <div>
-                                    <h1 className="text-sm font-black text-primary-dark tracking-tighter uppercase leading-none">BISWAJIT DAIMARY</h1>
+                                    <span className="text-sm font-black text-primary-dark tracking-tighter uppercase leading-none block">BISWAJIT DAIMARY</span>
                                     <p className="text-[7px] text-primary-orange font-black uppercase tracking-[0.2em] mt-1">Speaker, Assam</p>
                                 </div>
                             </Link>

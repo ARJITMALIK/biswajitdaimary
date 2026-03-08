@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollRevealChildren } from '../hooks/useScrollReveal';
+import SEO from '../components/SEO';
 import { MessageSquare, HelpCircle, FileText, Globe, Landmark, Mic2, ShieldCheck, ArrowRight } from 'lucide-react';
 
 const ParliamentPage = () => {
@@ -51,6 +52,13 @@ const ParliamentPage = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Parliamentary Record"
+                description="Examine the parliamentary performance and debates of Biswajit Daimary during his tenure in the Rajya Sabha."
+                keywords="Rajya Sabha MP Biswajit Daimary, Parliamentary Debates, Northeast Voice in Parliament, Bodo Issues in Rajya Sabha"
+                url="/parliament"
+                type="Organization"
+            />
             {/* Hero Section */}
             <section className="bg-primary-dark py-20 md:py-32 text-white relative overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-20">

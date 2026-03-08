@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { useScrollReveal, useScrollRevealChildren } from '../hooks/useScrollReveal';
 import { BookOpen, GraduationCap, Users, Award, Landmark, Globe, Heart, Shield, Building2 } from 'lucide-react';
 
@@ -87,6 +88,13 @@ const Biography = () => {
 
     return (
         <div className="bg-white">
+            <SEO
+                title="Biography"
+                description="Learn about the inspiring journey of Biswajit Daimary, from a student leader to the Speaker of the Assam Legislative Assembly."
+                keywords="Biswajit Daimary Biography, Student Leader, Assam Assembly Speaker, Life of Biswajit Daimary"
+                url="/about"
+                type="Person"
+            />
             {/* Header Section */}
             <section className="bg-primary-dark py-16 md:py-32 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-orange opacity-5 blur-3xl -mr-48 -mt-48 transition-all duration-1000"></div>
