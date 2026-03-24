@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // Import banner images from the newly captured screenshots
-import banner1 from '../assets/banners/Banner.svg';
+import banner1 from '../assets/banners/banner.svg';
 import banner2 from '../assets/banners/banner2.svg';
 import banner3 from '../assets/banners/banner3.svg';
 import banner4 from '../assets/banners/banner4.svg';
@@ -57,10 +57,18 @@ const BannerCarousel = () => {
                         <p className="text-gray-500 text-sm mt-1">Official highlights and announcements</p>
                     </div>
                     <div className="hidden md:flex space-x-2">
-                        <div className="banner-prev cursor-pointer w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-primary-orange hover:text-white hover:border-primary-orange transition-all">
+                        <div 
+                            className="banner-prev cursor-pointer w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-primary-orange hover:text-white hover:border-primary-orange transition-all"
+                            role="button"
+                            aria-label="Previous Slide"
+                        >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
                         </div>
-                        <div className="banner-next cursor-pointer w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-primary-orange hover:text-white hover:border-primary-orange transition-all">
+                        <div 
+                            className="banner-next cursor-pointer w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-primary-orange hover:text-white hover:border-primary-orange transition-all"
+                            role="button"
+                            aria-label="Next Slide"
+                        >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
                         </div>
                     </div>
@@ -137,6 +145,7 @@ const BannerCarousel = () => {
                         <button 
                             onClick={closeModal}
                             className="absolute top-2 right-2 md:top-4 md:right-4 z-20 w-10 h-10 bg-black/40 hover:bg-black/60 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all duration-300 border border-white/20"
+                            aria-label="Close Modal"
                         >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                         </button>

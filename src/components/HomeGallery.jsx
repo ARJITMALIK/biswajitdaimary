@@ -40,12 +40,14 @@ const HomeGallery = () => {
                         <button 
                             onClick={() => swiperRef.current?.slidePrev()}
                             className="w-7 h-7 md:w-9 md:h-9 border border-white/20 text-white flex items-center justify-center hover:bg-primary-orange hover:border-primary-orange transition-all duration-300 rounded-sm group/nav"
+                            aria-label="Previous Slide"
                         >
                             <ChevronLeft className="w-4 h-4 group-hover/nav:scale-110 transition-transform" />
                         </button>
                         <button 
                             onClick={() => swiperRef.current?.slideNext()}
                             className="w-7 h-7 md:w-9 md:h-9 border border-white/20 text-white flex items-center justify-center hover:bg-primary-orange hover:border-primary-orange transition-all duration-300 rounded-sm group/nav"
+                            aria-label="Next Slide"
                         >
                             <ChevronRight className="w-4 h-4 group-hover/nav:scale-110 transition-transform" />
                         </button>

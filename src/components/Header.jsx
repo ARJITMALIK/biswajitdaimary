@@ -155,6 +155,7 @@ const Header = () => {
                                 <button
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="p-2 text-primary-dark hover:text-primary-orange transition-colors"
+                                    aria-label="Close Menu"
                                 >
                                     <X className="w-8 h-8" />
                                 </button>

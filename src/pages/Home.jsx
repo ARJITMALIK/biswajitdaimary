@@ -72,6 +72,7 @@ function Home() {
                                 <input
                                     type="email"
                                     placeholder="Please Enter Your Email"
+                                    aria-label="Email Address"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     onKeyDown={(e) => e.key === 'Enter' && handleSubscribe()}

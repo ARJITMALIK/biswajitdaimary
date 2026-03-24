@@ -23,8 +23,8 @@ const Footer = () => {
                             Towards a future of peace and prosperity for all.
                         </p>
                         <div className="flex space-x-2">
-                            {[Twitter, Instagram, Facebook].map((Icon, idx) => (
-                                <a key={idx} href={SOCIAL_URLS[idx]} target="_blank" rel="noopener noreferrer" className="w-7 h-7 md:w-8 md:h-8 bg-gray-50 rounded-md md:rounded-lg flex items-center justify-center text-primary-dark hover:bg-primary-orange hover:text-white transition-all shadow-sm hover:shadow-md hover:-translate-y-1">
+                            {[[Twitter, "Twitter"], [Instagram, "Instagram"], [Facebook, "Facebook"]].map(([Icon, name], idx) => (
+                                <a key={idx} href={SOCIAL_URLS[idx]} target="_blank" rel="noopener noreferrer" className="w-7 h-7 md:w-8 md:h-8 bg-gray-50 rounded-md md:rounded-lg flex items-center justify-center text-primary-dark hover:bg-primary-orange hover:text-white transition-all shadow-sm hover:shadow-md hover:-translate-y-1" aria-label={`Visit our ${name} page`}>
                                     <Icon className="w-3 h-3 md:w-4 md:h-4" />
                                 </a>
                             ))}
@@ -83,10 +83,10 @@ const Footer = () => {
                                     <p className="text-[8px] text-gray-400 mt-1 text-center font-bold tracking-tight">SCAN</p>
                                 </div>
                                 <div className="flex flex-col space-y-1.5">
-                                    <a href="#" className="transform hover:scale-105 transition-transform duration-200">
+                                    <a href="#" className="transform hover:scale-105 transition-transform duration-200" aria-label="Download on the App Store">
                                         <img src={appStoreBtn} alt="App Store" className="h-6 md:h-8 w-auto object-contain" />
                                     </a>
-                                    <a href="#" className="transform hover:scale-105 transition-transform duration-200">
+                                    <a href="#" className="transform hover:scale-105 transition-transform duration-200" aria-label="Get it on Google Play">
                                         <img src={playStoreBtn} alt="Play Store" className="h-6 md:h-8 w-auto object-contain" />
                                     </a>
                                 </div>
